@@ -6,7 +6,7 @@
         public int OrderId { get; set; }
         public int BookId { get; set; }
         public int Quantity { get; set; }
-        public decimal Subtotal { get; set; }
+        public double Subtotal { get; set; }
 
 
         public Order Order { get; set; }

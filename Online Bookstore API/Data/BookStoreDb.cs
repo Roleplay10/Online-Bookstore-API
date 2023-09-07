@@ -3,9 +3,9 @@ using Online_Bookstore_API.Data.Entities;
 
 namespace Online_Bookstore_API.Data
 {
-    public class Database : DbContext
+    public class BookStoreDb : Microsoft.EntityFrameworkCore.DbContext
     {
-        public Database(DbContextOptions<Database> options) : base(options)
+        public BookStoreDb(DbContextOptions<BookStoreDb> options) : base(options)
         {
         }
         public DbSet<Book> Books { get; set; }
