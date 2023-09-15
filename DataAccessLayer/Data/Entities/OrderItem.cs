@@ -1,4 +1,4 @@
-﻿namespace Online_Bookstore_API.Data.Entities
+﻿namespace DataAccessLayer.Data.Entities
 {
     public class OrderItem
     {

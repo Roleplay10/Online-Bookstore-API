@@ -1,15 +1,11 @@
-﻿namespace Online_Bookstore_API.Data.Entities
+﻿namespace DataBusinessLogic.DTOs.BookDTOs
 {
-    public class Book
+    public class BookDTO
     {
-        public int BookId { get; set; }
         public string Title { get; set; }
         public string Author { get; set; }
-        public double Price { get; set; }
         public string Description { get; set; }
         public int PublicationYear { get; set; }
         public string Genre { get; set; }
-
-        public ICollection<OrderItem> OrderItems { get; set; }
     }
 }

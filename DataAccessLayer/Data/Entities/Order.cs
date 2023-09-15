@@ -1,4 +1,4 @@
-﻿namespace Online_Bookstore_API.Data.Entities
+﻿namespace DataAccessLayer.Data.Entities
 {
     public class Order
     {
@@ -9,5 +9,10 @@
         public string Status { get; set; }
         public User User { get; set; }
         public ICollection<OrderItem> OrderItems { get; set; }
+
+        public Order()
+        {
+            OrderItems = new List<OrderItem>();
+        }
     }
 }
